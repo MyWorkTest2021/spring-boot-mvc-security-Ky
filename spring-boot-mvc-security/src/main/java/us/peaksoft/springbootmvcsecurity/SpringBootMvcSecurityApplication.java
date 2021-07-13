@@ -11,6 +11,7 @@ public class SpringBootMvcSecurityApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SpringBootMvcSecurityApplication.class, args);
+        System.out.println();
     }
 
 }
