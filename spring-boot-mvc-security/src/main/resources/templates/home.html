@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <style>
+        h3 {
+           color: mediumturquoise;
+            font-family: "JetBrains Mono";
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <h5 class="my-0 mr-md-auto font-weight-normal">Peaksoft</h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="py-2 text-dark" href="#">Features</a>
+        <a class="py-2 text-dark" href="#">Support</a>
+        <a class="py-2 text-dark" href="#">Pricing</a>
+        <a th:href="@{/login}"><input type="submit" class="btn btn-primary" value="log out"></a>
+    </nav>
+</div>
+<main>
+    <h3>Welcome</h3>
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Welcome Peaksoft training center</h1>
+                <p class="lead text-muted">What do you need to have to start watching the course?
+                    Basic knowledge of the Java programming language
+                    Simple explanations
+                    Simple examples
+                    Lots of practice
+                    Successful learning</p>
+                <p>
+                    <a th:href="@{/signUp}"><input type="submit" class="btn btn-primary" value="Registration"></a>
+                    <a th:href="@{/user}"><input type="submit" class="btn btn-primary" value="See students page"></a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect>
+                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">JAVA</text>
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Java is a programming language and computing platform first released by
+                                Sun Microsystems in 1995.
+                                There are lots of applications and websites that will not work unless you have Java
+                                installed,
+                                and more are created every day. Java is fast, secure, and reliable. From laptops to
+                                datacenters,
+                                game consoles to scientific supercomputers, cell phones to the Internet, Java is
+                                everywhere!</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Enroll in a course
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect>
+                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">JAVASCRIPT</text>
+                        </svg>
+
+                        <div class="card-body">
+                            <p class="card-text">JavaScript is a cross-platform, object-oriented scripting language used
+                                to make webpages
+                                interactive (e.g., having complex animations, clickable buttons, popup menus, etc.).
+                                There are also more advanced server side versions of JavaScript such as Node.js,
+                                which allow you to add more functionality to a website than downloading
+                                files (such as realtime collaboration between multiple computers). Inside a host
+                                environment (for example, a web browser), JavaScript can be connected to the objects of
+                                its
+                                environment to provide programmatic control over them.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Enroll in a course
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                             xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                             preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c"></rect>
+                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Python</text>
+                        </svg>
+
+                        <div class="card-body">
+                            <p class="card-text">Python is an interpreted, object-oriented, high-level programming
+                                language with dynamic semantics.
+                                Its high-level built-in data structures, combined with dynamic typing and dynamic
+                                binding,
+                                make it very attractive for Rapid Application Development, as well as for use as a
+                                scripting or glue
+                                language to connect existing components together.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Enroll in a course
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="text-muted py-5">
+    <div class="container">
+        <p class="float-end mb-1">
+            <a href="#">Back to top</a>
+        </p>
+        <p class="mb-1">Album example is © Bootstrap, but please download and customize it for yourself!</p>
+        <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
+                href="/docs/5.0/getting-started/introduction/">getting started guide</a>.</p>
+    </div>
+</footer>
+
+
+<script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+
+<div class="mallbery-caa"
+     style="z-index: 2147483647 !important; text-transform: none !important; position: fixed;"></div>
+<div class="mallbery-caa"
+     style="z-index: 2147483647 !important; text-transform: none !important; position: fixed;"></div>
+</body>
+<!-- Вариант 1: Bootstrap в связке с Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</body>
+</html>
